@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SignUp — ClassIQ</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">🎓</span>
+      ClassIQ
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="dashboard.html" class="nav-link">Courses</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-dark btn-sm"><span>Login</span></a>
+      <a href="signup.html" class="btn btn-dark btn-sm"><span>SignUp</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="auth-main">
+  <form class="auth-card" id="signupForm" novalidate>
+    <h1>SignUp</h1>
+
+    <div class="field">
+      <input type="email" id="email" placeholder="Enter Your Email" autocomplete="email" />
+      <p class="field-error" id="emailError"></p>
+    </div>
+
+    <div class="field">
+      <input type="text" id="fullname" placeholder="Enter Your Fullname" autocomplete="name" />
+      <p class="field-error" id="fullnameError"></p>
+    </div>
+
+    <div class="field">
+      <input type="password" id="password" placeholder="Enter Your Password" autocomplete="new-password" />
+      <p class="field-error" id="passwordError"></p>
+    </div>
+
+    <button type="submit" class="btn btn-green btn-block">SignUp</button>
+
+    <p class="form-status" id="formStatus"></p>
+
+    <p class="form-note">Already have an account? <a href="login.html">Login</a></p>
+  </form>
+</main>
+
+<script src="js/script.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

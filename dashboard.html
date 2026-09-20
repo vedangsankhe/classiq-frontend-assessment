@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard — ClassIQ</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">🎓</span>
+      ClassIQ
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+    </nav>
+
+    <div class="header-actions" id="headerActions">
+      <a href="login.html" class="btn btn-dark btn-sm"><span>Login</span></a>
+      <a href="signup.html" class="btn btn-dark btn-sm"><span>SignUp</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="dash-banner">
+    <h1 id="bannerHeading">Enroll in Your Fav Courses</h1>
+    <div class="avatar-card">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="70" r="46" fill="#f2c9a0"/>
+        <path d="M56 66c0-30 24-52 44-52s44 22 44 52c0-8-6-30-20-38-4 10-16 14-24 14-10 0-16-6-18-12-12 6-26 20-26 36z" fill="#1c1c1c"/>
+        <circle cx="82" cy="72" r="4" fill="#1c1c1c"/>
+        <circle cx="118" cy="72" r="4" fill="#1c1c1c"/>
+        <rect x="60" y="128" width="90" height="60" rx="6" fill="#c9c9c9"/>
+        <path d="M30 220c0-46 26-80 70-80s70 34 70 80z" fill="#1c1c1c"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="dash-courses">
+    <h2>All Courses <span aria-hidden="true">↗</span></h2>
+    <div class="course-tile-grid" id="courseGrid">
+      <button class="course-tile" data-course="HTML &amp; CSS Fundamentals">HTML &amp; CSS Fundamentals</button>
+      <button class="course-tile" data-course="JavaScript Essentials">JavaScript Essentials</button>
+      <button class="course-tile" data-course="Responsive Web Design">Responsive Web Design</button>
+      <button class="course-tile" data-course="Python for Data Science">Python for Data Science</button>
+      <button class="course-tile" data-course="UI/UX Design Basics">UI/UX Design Basics</button>
+      <button class="course-tile" data-course="Mobile App Development">Mobile App Development</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
