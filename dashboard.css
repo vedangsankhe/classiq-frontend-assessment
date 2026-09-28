@@ -1,0 +1,94 @@
+/* ==========================================================================
+   ClassIQ — dashboard page styles (dashboard.html only)
+   ========================================================================== */
+
+.dash-banner {
+  background: radial-gradient(65% 100% at 82% 50%, rgba(182, 241, 58, 0.3), rgba(182, 241, 58, 0) 75%), var(--card-grey);
+  border-radius: var(--radius);
+  margin-top: 32px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.dash-banner h1 {
+  font-size: 22px;
+  margin: 0;
+  max-width: 320px;
+}
+
+.dash-banner .avatar-card {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1/1;
+  background: transparent;
+  margin: -40px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dash-banner .avatar-card svg {
+  width: 100%;
+  height: auto;
+}
+
+.dash-courses {
+  padding: 48px 0 72px;
+}
+
+.dash-courses h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  margin: 0 0 24px;
+}
+
+.course-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.course-tile {
+  background: var(--card-grey);
+  border-radius: var(--radius);
+  aspect-ratio: 4 / 3;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  transition: background 0.15s ease;
+}
+
+.course-tile:hover {
+  background: #dedede;
+}
+
+@media (max-width: 900px) {
+  .course-tile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dash-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dash-banner .avatar-card {
+    margin: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .course-tile-grid {
+    grid-template-columns: 1fr;
+  }
+}
